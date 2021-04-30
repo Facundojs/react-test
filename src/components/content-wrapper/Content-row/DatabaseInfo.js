@@ -11,5 +11,4 @@ function DatabaseInfo() {
         </div>
     )
 }
-
 export default DatabaseInfo

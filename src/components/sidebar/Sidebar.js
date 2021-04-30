@@ -1,4 +1,3 @@
-import react from 'react'
 import NavDashboard from './NavDashboard'
 import Logo from './SidebarLogo'
 import Actions from './Actions'
@@ -8,16 +7,15 @@ import SidebarNavItem3 from './SidebarNavItem3'
 
 function Sidebar() {
     return (
-        <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion pt-3" id="accordionSidebar">
             <Logo />
-            <hr className="sidebar-divider" />
             <NavDashboard />
             <hr className="sidebar-divider" />
             <Actions />
             <SidebarNavItem1 />
             <SidebarNavItem2 />
             <SidebarNavItem3 />
-			<hr class="sidebar-divider d-none d-md-block"/>
+			<hr className="sidebar-divider d-none d-md-block"/>
         </ul>
     )
 }

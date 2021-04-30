@@ -1,10 +1,8 @@
-import react from 'react'
-
-function Logo(){
+function Logo(props){
     return (
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
-				<div class="sidebar-brand-icon">
-					<img class="w-100" src="../../assets/images/logo-DH.png" alt="Digital House"/>
+        <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+				<div className="sidebar-brand-icon">
+				<img className="w-50 p-3" src="../../assets/images/logo.png" alt="Digital House"/>
 				</div>
 		</a>
     )

@@ -1,7 +1,7 @@
 import Title from './Title'
 import InfoCards from './InfoCards'
 import DatabaseInfo from './DatabaseInfo'
-
+import Table from './Table'
 function ContainerFluid() {
     const cards = [
         {
@@ -26,8 +26,11 @@ function ContainerFluid() {
     return (
         <div className="container-fluid">
             <Title />
-            <InfoCards cards={cards} />
-            <DatabaseInfo/>
+            <div className="row">
+            </div>
+                <InfoCards cards={cards} />
+            <DatabaseInfo />
+            <Table />
         </div>
     )
 }

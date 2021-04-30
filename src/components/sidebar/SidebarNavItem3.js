@@ -2,9 +2,9 @@ import React from 'react'
 
 function SidebarNavItem3() {
     return (
-        <li class="nav-item">
-			<a class="nav-link" href="/">
-				<i class="fas fa-fw fa-table"></i>
+        <li className="nav-item">
+			<a className="nav-link" href="/">
+				<i className="fas fa-fw fa-table"></i>
 			<span>Tables</span></a>
 		</li>
     )

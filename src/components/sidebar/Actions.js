@@ -1,7 +1,6 @@
-import react from 'react'
 function Actions() {
     return (
-		<div class="sidebar-heading">Actions</div>
+		<div className="sidebar-heading">Actions</div>
     )
 }
 
