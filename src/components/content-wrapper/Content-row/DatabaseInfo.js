@@ -1,13 +1,11 @@
 import LastMovieInDb from './LastMovieInDb'
-import GenresInDb from './GenresInDb'
+import CategoriesInDb from './CategoriesInDb'
 
 function DatabaseInfo() {
-    const generos = ['Acción', 'Animación', 'Aventura', 'Ciencia Ficción',
-    'Comedia', 'Documental', 'Drama', ' Fantasia', 'Infantiles', 'Musical']
     return (
         <div className="row">
             <LastMovieInDb />
-            <GenresInDb generos={ generos }/>
+            <CategoriesInDb />
         </div>
     )
 }
