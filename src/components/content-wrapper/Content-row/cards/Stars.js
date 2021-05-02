@@ -42,6 +42,10 @@ class Actor extends Component {
                                     <>{`Ocurrio un error de conexión`}</> : ''    
                                 }
                             </div>
+                            <a href="https://github.com/Facundojs/grupo_14_Geek_Studio"
+                                className="text-warning display-6">
+                                Give me stars here
+                            </a>
                         </div>
                         <div className="col-auto">
                             <i className="fas fa-star fa-2x text-gray-300"></i>
