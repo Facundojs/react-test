@@ -10,7 +10,7 @@ class CategoriesInDb extends Component{
         }
     }
     componentDidMount(){
-        fetch('/api/categories')
+        fetch('/api/categories/dashboardList')
         .then(respuesta => {
         return respuesta.json()
         })
@@ -36,10 +36,11 @@ class CategoriesInDb extends Component{
                     {this.state.categoriesList && this.state.isLoaded ? 
                         <div className="row">
                             {this.state.categoriesList.map((item, i) =>{
-                                return <div key={item.name + i} className="col-lg-6 mb-4">
+                                return <div key={item.id + i} className="col-lg-6 mb-4">
                                     <div className="card bg-dark text-white shadow">
                                         <div className="card-body">
-                                            {item.name}
+                                            {`${item.id}- ${item.nombre} (${item.cantidadDeProductos} 
+                                                productos actualmente)`}
                                         </div>
                                     </div>
                                 </div>}

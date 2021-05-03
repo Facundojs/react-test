@@ -1,10 +1,10 @@
-import LastMovieInDb from './LastMovieInDb'
+import LastProductInDb from './LastProductInDb'
 import CategoriesInDb from './CategoriesInDb'
 
 function DatabaseInfo() {
     return (
         <div className="row">
-            <LastMovieInDb />
+            <LastProductInDb />
             <CategoriesInDb />
         </div>
     )
