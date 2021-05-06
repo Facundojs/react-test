@@ -2,8 +2,7 @@ function AlertsItem() {
     return (
         <li className="nav-item dropdown no-arrow mx-1">
 			<a className="nav-link dropdown-toggle" href="/" id="alertsDropdown">
-			    <i className="fas fa-bell fa-fw"></i>
-			    <span className="badge badge-danger badge-counter">3+</span>
+			    <i className="fas fa-user fa-fw"></i>
 			</a>
 		</li>
     )

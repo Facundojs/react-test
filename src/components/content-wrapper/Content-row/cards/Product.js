@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom'
 
 class Products extends Component {
     constructor(props){
@@ -34,7 +35,7 @@ class Products extends Component {
                             <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                 PRODUCTS IN DATABASE
                             </div>
-                            <div className="h5 mb-0 font-weight-bold text-gray-800">
+                            <div className="h5 my mb-0 font-weight-bold text-gray-800">
                                 {this.state.isLoaded && this.state.products ?
                                     <>{`${this.state.products}`}</> : 'Cargando...'    
                                 }
@@ -42,6 +43,9 @@ class Products extends Component {
                                     <>{`Ocurrio un error de conexión`}</> : ''    
                                 }
                             </div>
+                            <Link className="btn btn-primary active mt-2"  to="/product">
+                                Sell
+                            </Link>
                         </div>
                         <div className="col-auto">
                             <i className="fas fa-laptop fa-2x text-gray-300"></i>

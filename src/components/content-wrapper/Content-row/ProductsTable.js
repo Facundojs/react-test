@@ -54,7 +54,7 @@ class ProductsTable extends Component{
                 return this.setState({ isLoaded: true, productsData: products.data });
             })
             .catch((err) => {
-                return this.state({isLoaded: true, error:err})
+                return this.setState({isLoaded: true, error:err})
             })            
     }
     render() {

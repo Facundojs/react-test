@@ -1,9 +1,11 @@
+import { Link } from 'react-router-dom'
+
 function NavDashboard() {
     return (
         <li className="nav-item active">
-            <a className="nav-link" href="/">
+            <Link className="nav-link" to="/">
                 <i className="fas fa-fw fa-tachometer-alt"></i>
-                <span>Dashboard - Geek Studio</span></a>
+                <span>Dashboard - Geek Studio</span></Link>
         </li>
     )
 }

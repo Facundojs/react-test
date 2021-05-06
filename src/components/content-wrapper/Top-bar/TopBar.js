@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
 import AlertsItem from './AlertsItem'
-import MessageItem from './MessageItem'
+
 import UserItem from './UserItem'
 function TopBar() {
     return (
@@ -9,7 +9,6 @@ function TopBar() {
                 <Button />
             <ul className="navbar-nav ml-auto">
                 <AlertsItem />
-                <MessageItem />
                 <div className="topbar-divider d-none d-sm-block"></div>
                 <UserItem />
             </ul>

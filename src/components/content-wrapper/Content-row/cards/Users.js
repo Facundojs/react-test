@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom'
 
 class Users extends Component {
     constructor(props){
@@ -42,9 +43,12 @@ class Users extends Component {
                                     <>{`Ocurrio un error de conexión`}</> : ''    
                                 }
                             </div>
+                            <Link className="btn btn-success active mt-2"  to="/user">
+                                Sign up
+                            </Link>
                         </div>
                         <div className="col-auto">
-                            <i className="fas fa-laptop fa-2x text-gray-300"></i>
+                            <i className="fas fa-user fa-2x text-gray-300"></i>
                         </div>
                     </div>
                 </div>

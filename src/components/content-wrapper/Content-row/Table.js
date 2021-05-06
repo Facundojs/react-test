@@ -18,9 +18,9 @@ class Table extends Component {
                 return (
                     <>
                         <div className="p-3 table-responsive card shadow mb-4" id="table">
-                            <a href="/#table" className="h3 text-center  "
+                            <p href="/#table" className="h3 text-center btn "
                                 onClick={() => this.setState({ table: 'users' })}
-                            >Ver usuarios</a>
+                            >Ver usuarios</p>
                             <ProductsTable />
                         </div>
                     </>
@@ -29,8 +29,8 @@ class Table extends Component {
                 return (
                     <>
                         <div className="p-3 table-responsive card shadow mb-4" id="table">
-                            <a href="/#table" className="h3 text-center"
-                                onClick={() => this.setState({ table: 'products' })}>Ver productos</a>
+                            <p href="/#table" className="h3 text-center btn"
+                                onClick={() => this.setState({ table: 'products' })}>Ver productos</p>
                             <UsersTable/>
                         </div>
                     </>

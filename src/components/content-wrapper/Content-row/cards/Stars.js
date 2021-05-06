@@ -34,7 +34,7 @@ class Actor extends Component {
                             <div className="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                 STARS IN REPO
                             </div>
-                            <div className="h5 mb-0 font-weight-bold text-gray-800">
+                            <div className="h5 my-3 mb-0 font-weight-bold text-gray-800">
                                 {this.state.isLoaded && this.state.stars ?
                                     <>{`${this.state.stars}`}</> : 'Cargando...'    
                                 }
