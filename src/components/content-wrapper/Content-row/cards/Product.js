@@ -43,9 +43,9 @@ class Products extends Component {
                                     <>{`Ocurrio un error de conexión`}</> : ''    
                                 }
                             </div>
-                            <Link className="btn btn-primary active mt-2"  to="/product">
+                            {/* <Link className="btn btn-primary active mt-2"  to="/product">
                                 Sell
-                            </Link>
+                            </Link> */}
                         </div>
                         <div className="col-auto">
                             <i className="fas fa-laptop fa-2x text-gray-300"></i>

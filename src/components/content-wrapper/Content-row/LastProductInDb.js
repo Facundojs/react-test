@@ -42,7 +42,7 @@ class LastProductInDb extends Component {
                             <div className="card-header py-3">
                                 <h5 className="m-0 font-weight-bold text-gray-800">Last product in Data Base</h5>
                             </div>
-                            <h2>{`${this.state.error}`}</h2>
+                            <h2 className="mb-4">{`${this.state.error}`}</h2>
                         </div>
                     </div>
                 )

@@ -43,9 +43,9 @@ class Users extends Component {
                                     <>{`Ocurrio un error de conexión`}</> : ''    
                                 }
                             </div>
-                            <Link className="btn btn-success active mt-2"  to="/user">
+                            {/* <Link className="btn btn-success active mt-2"  to="/user">
                                 Sign up
-                            </Link>
+                            </Link> */}
                         </div>
                         <div className="col-auto">
                             <i className="fas fa-user fa-2x text-gray-300"></i>
