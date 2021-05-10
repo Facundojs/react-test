@@ -45,17 +45,21 @@ class ProductsTable extends Component{
         }
     }
     componentDidMount() {
-        fetch("/api/products/dashboardList")
+        fetch("http://grupo-14-geek-studio.herokuapp.com/api/products/dashboardList")
             .then((res) => {
                 return res.json()
             })
             .then((products) => {
-                console.log(products.data);
                 return this.setState({ isLoaded: true, productsData: products.data });
             })
             .catch((err) => {
                 return this.setState({isLoaded: true, error:err})
             })            
+    }
+    componentWillUnmount() {
+        if (this._asyncRequest) {
+          this._asyncRequest.cancel();
+        }
     }
     render() {
         return (

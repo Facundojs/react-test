@@ -46,17 +46,21 @@ class UsersTable extends Component{
         }
     }
     componentWillMount() {
-        fetch("/api/users/dashboardList")
+        fetch("http://grupo-14-geek-studio.herokuapp.com/api/users/dashboardList")
             .then((res) => {
                 return res.json()
             })
             .then((users) => {
-                console.log(users.data);
                 return this.setState({ isLoaded: true, usersData: users.data });
             })
             .catch((err) => {
                 return this.state({isLoaded: true, error:err})
             })
+    }
+    componentWillUnmount() {
+        if (this._asyncRequest) {
+          this._asyncRequest.cancel();
+        }
     }
     render() {
         return (

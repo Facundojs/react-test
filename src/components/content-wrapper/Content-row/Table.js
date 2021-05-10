@@ -13,8 +13,7 @@ class Table extends Component {
     }
 
     render() {
-        {
-            if (this.state.table == 'products') {
+            if (this.state.table === 'products') {
                 return (
                     <>
                         <div className="p-3 table-responsive card shadow mb-4" id="table">
@@ -25,7 +24,7 @@ class Table extends Component {
                         </div>
                     </>
                 )
-            } else if (this.state.table == 'users') {
+            } else if (this.state.table === 'users') {
                 return (
                     <>
                         <div className="p-3 table-responsive card shadow mb-4" id="table">
@@ -39,7 +38,6 @@ class Table extends Component {
                 <div>Ha ocurrido un error</div>
             }
         }
-    }
 }
 
 export default Table

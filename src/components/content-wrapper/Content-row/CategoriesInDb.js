@@ -36,7 +36,7 @@ class CategoriesInDb extends Component{
                     {this.state.categoriesList && this.state.isLoaded ? 
                         <div className="row">
                             {this.state.categoriesList.map((item, i) =>{
-                                return <div key={item.id + i} className="col-lg-6 mb-4">
+                                return <div key={item.id + i + i} className="col-lg-6 mb-4">
                                     <div className="card bg-dark text-white shadow">
                                         <div className="card-body">
                                             {`${item.id}- ${item.nombre} (${item.cantidadDeProductos} 

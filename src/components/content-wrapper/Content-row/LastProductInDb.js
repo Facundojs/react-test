@@ -24,7 +24,7 @@ class LastProductInDb extends Component {
     }
 
     render(){
-        {    if (!this.state.isLoaded) {
+        if (!this.state.isLoaded) {
             return(
                 <div className="col-lg-6 mb-4">
                      <div className="card shadow mb-4">
@@ -72,7 +72,6 @@ class LastProductInDb extends Component {
                     </div>
                 )
             }
-        }
     }
 }
 
