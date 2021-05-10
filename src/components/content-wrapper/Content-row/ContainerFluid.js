@@ -14,7 +14,6 @@ function ContainerFluid() {
                 <Users />
             </div>
             <DatabaseInfo />
-            <Table />
         </div>
     )
 }

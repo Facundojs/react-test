@@ -11,7 +11,7 @@ class LastProductInDb extends Component {
         }
     }
     componentDidMount() {
-        fetch("/api/products/dashboardLastproduct")
+        fetch("http://grupo-14-geek-studio.herokuapp.com/api/products/dashboardLastproduct")
             .then((res) => {
                 return res.json()
             })
@@ -62,7 +62,7 @@ class LastProductInDb extends Component {
                                 </div>
                                 <p>{`${this.state.data.features}`}</p>
                                 <div className="flex-row d-flex justify-content-around">
-                                    <a className="btn btn-danger" rel="nofollow" href={`https://grupo-14-geek-studio.herokuapp.com/productos/${this.state.data.id}`}>View product detail</a>
+                                    <a className="btn btn-danger" target="_blank" rel="nofollow" href={`https://grupo-14-geek-studio.herokuapp.com/productos/${this.state.data.id}`}>View product detail</a>
                                     <Link className="btn btn-primary" rel="nofollow" to="/product">
                                         Create product
                                     </Link>

@@ -11,7 +11,7 @@ class Users extends Component {
     };
     
     componentDidMount() {
-        fetch("/api/users")
+        fetch("http://grupo-14-geek-studio.herokuapp.com/api/users")
             .then((res) => {
                 return res.json();
             })

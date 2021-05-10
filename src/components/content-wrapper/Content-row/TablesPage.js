@@ -1,8 +1,9 @@
-import Sidebar from '../sidebar/Sidebar'
-import TopBar from '../content-wrapper/Top-bar/TopBar'
-import Footer from '../content-wrapper/footer/Footer'
+import Sidebar from '../../sidebar/Sidebar'
+import TopBar from '../Top-bar/TopBar'
+import Footer from '../footer/Footer'
+import Table from '../Content-row/Table'
 import React, { Component } from 'react'
-export default class Login extends Component {
+export default class TablesPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -16,8 +17,9 @@ export default class Login extends Component {
             <>
                 <Sidebar/>
                 <div id="content-wrapper" className="d-flex flex-column">
-                    <div id="content">
-                        <TopBar/>
+                    <div id="content" className="m-2">
+                        <TopBar />
+                        <Table/>
                     </div>
                     <Footer/>
                 </div>

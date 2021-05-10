@@ -16,7 +16,7 @@ class Table extends Component {
             if (this.state.table === 'products') {
                 return (
                     <>
-                        <div className="p-3 table-responsive card shadow mb-4" id="table">
+                        <div className="p-3 table-responsive card shadow" id="table">
                             <p href="/#table" className="h3 text-center btn "
                                 onClick={() => this.setState({ table: 'users' })}
                             >Ver usuarios</p>

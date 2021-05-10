@@ -11,7 +11,7 @@ class Products extends Component {
     };
     
     componentDidMount() {
-        fetch("/api/products")
+        fetch("http://grupo-14-geek-studio.herokuapp.com/api/products")
             .then((res) => {
                 return res.json();
             })
