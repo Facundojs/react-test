@@ -10,7 +10,7 @@ class CategoriesInDb extends Component{
         }
     }
     componentDidMount(){
-        fetch('http://grupo-14-geek-studio.herokuapp.com/api/categories/dashboardList')
+        fetch('//grupo-14-geek-studio.herokuapp.com/api/categories/dashboardList')
         .then(respuesta => {
         return respuesta.json()
         })

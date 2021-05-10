@@ -11,7 +11,7 @@ class LastProductInDb extends Component {
         }
     }
     componentDidMount() {
-        fetch("http://grupo-14-geek-studio.herokuapp.com/api/products/dashboardLastproduct")
+        fetch("//grupo-14-geek-studio.herokuapp.com/api/products/dashboardLastproduct")
             .then((res) => {
                 return res.json()
             })

@@ -46,7 +46,7 @@ class UsersTable extends Component{
         }
     }
     componentWillMount() {
-        fetch("http://grupo-14-geek-studio.herokuapp.com/api/users/dashboardList")
+        fetch("//grupo-14-geek-studio.herokuapp.com/api/users/dashboardList")
             .then((res) => {
                 return res.json()
             })

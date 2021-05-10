@@ -45,7 +45,7 @@ class ProductsTable extends Component{
         }
     }
     componentDidMount() {
-        fetch("http://grupo-14-geek-studio.herokuapp.com/api/products/dashboardList")
+        fetch("//grupo-14-geek-studio.herokuapp.com/api/products/dashboardList")
             .then((res) => {
                 return res.json()
             })
